@@ -1,0 +1,78 @@
+<!DOCTYPE html> <!--informar qual é o documento-->
+<html lang="pt-br"> <!---linguagem do site-->
+<head>
+   
+    <meta charset="UTF-8"> <!-- acentos nas palavras-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- tamanho do site-->
+    <title>RhP.S - Contatos</title> <!-- nome da aba aperta do site-->
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+    <header><!--um rodape em cima ou cabessário-->
+        <div class="caixa">
+            <h1><img src="https://i.pinimg.com/1200x/79/32/16/793216dbd46f4ec012685773e8b02900.jpg" alt="RhP.S Barber & Beauty"></h1>
+
+            <nav><!-- menu de navegaçao-->
+                <ul><!--lista-->
+                    <li>  <a href="index.html">INICIO</a></li> <!--linha da lista-->
+                    <li>  <a href="servicos.html">SERVIÇOS</a></li>
+                    <li>  <a href="contatos.html">CONTATOS </a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+<main>
+    <form>
+        <label for="nomesobrenome"> Nome e sobrenome</label>
+        <input type="text" id="nomesobrenome" class="input-padrao"> 
+
+        <label for="email">E-mail</label>
+        <input type="text" id="email" class="input-padrao"> 
+
+        <label for="telefone"> Telefone</label>
+        <input type="text" id="telefone" class="input-padrao">
+
+        <label for="mensagem">Mensagem</label>
+        <textarea cols="70" rows="10" id="mensagem" class="input-padrao"></textarea>
+
+        <div>
+            <p>Como prefere o nosso contato?</p>
+            <label for="radio-email">
+                <input type="radio" name="contato" value="email" id="radio-email">
+                Email
+            </label>
+
+            <label for="radio-telefone">
+                <input type="radio" name="contato" value="telefone" id="radio-telefone">
+                Telefone
+            </label>
+
+            <label for="radio-whatsapp">
+                <input type="radio" name="contato" value="whatsapp" id="radio-whatsapp">
+                Whatsapp
+            </label> <br>
+        </div>
+        <div>
+            <p>Qual horário prefere ser atendido?</p> 
+            <select>
+                <option>Manhã</option>
+                <option>Tarde</option>
+                <option>Noite</option>
+            </select>
+        </div>
+
+        <label class="checkbox"> 
+            Gostaria de receber novidades da RhP.S por email?
+            <input type="checkbox">
+        </label>
+            <input type="submit" value="Enviar mensagem" class="enviar">
+    </form>
+</main>
+
+        <footer>
+        <img src="https://i.pinimg.com/1200x/79/32/16/793216dbd46f4ec012685773e8b02900.jpg" alt="RhP.S Barber & Beauty">
+        <p class="copyright"> &#169; RhP.S Barber & Beauty - Estilo, cuidado e personalidade.</p>
+    </footer>
+</body>
+</html>
